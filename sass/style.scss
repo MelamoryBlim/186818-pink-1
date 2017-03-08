@@ -1,0 +1,29 @@
+//@import '../../bourbon/bourbon';
+@import 'normalize';
+
+@import 'mixins',
+'vars',
+'global/fonts';
+
+@import 'blocks/contacts',
+'blocks/download',
+'blocks/footer-copyright',
+'blocks/footer-logo',
+'blocks/footer-socnet',
+'blocks/gallery',
+'blocks/hit',
+'blocks/logo',
+'blocks/main-nav',
+'blocks/page',
+'blocks/page-content',
+'blocks/page-footer',
+'blocks/page-header',
+'blocks/photo-title',
+'blocks/price',
+'blocks/promo',
+'blocks/promo-image',
+'blocks/reviews',
+'blocks/userphoto',
+'blocks/userstory',
+'blocks/versions',
+'blocks/visually-hidden';
