@@ -1,0 +1,25 @@
+.footer-copyright {
+  display: block;
+  min-height: 97px;
+}
+
+.footer-copyright__text {
+  display: block;
+  color: $gray;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  padding-top: 29px;
+  margin-left: 95px;
+}
+
+.logo-htmlacademy {
+  float: right;
+  display: block;
+  width: 35px;
+  height: 34px;
+  position: relative;
+  top: -24px;
+  left: -92px;
+  fill: $pink;
+}

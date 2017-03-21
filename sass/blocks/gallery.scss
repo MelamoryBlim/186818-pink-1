@@ -1,0 +1,131 @@
+.gallery {
+  position: relative;
+  top: 0;
+}
+
+.gallery__text {
+  color: $gray;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  padding-left: 38px;
+  padding-right: 38px;
+  padding-top: 33px;
+  padding-bottom: 35px;
+}
+
+.photo__text {
+  display: block;
+  background-color: $lightgray;
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+  top: -6px;
+}
+
+.photo__text::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.photo__text--name {
+  display: inline-block;
+  font-family: "OpenSans bold", sans-serif;
+  color: $gray;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 23px;
+  margin-left: 17px;
+}
+
+.photo__text--time {
+  display: inline-block;
+  font-family: "OpenSans light", Arial, sans-serif;
+  color: $gray;
+  line-height: 24px;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-left: -20px;
+}
+
+.photo__text--story {
+  display: block;
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: $gray;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-left: 18px;
+  margin-top: 0;
+  margin-bottom: 2px;
+}
+
+.icon-heart {
+  float: left;
+  width: 13px;
+  height: 13px;
+  left: 20px;
+  fill: $pink;
+  margin-right: 19px;
+  margin-top: 1px;
+}
+
+.photo__likes {
+  float: left;
+  left: 38px;
+  color: $pink;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 65px;
+  text-transform: uppercase;
+  padding-left: 18px;
+  margin-top: -19px;
+}
+
+.gallery__elem:nth-child(3) .photo__text:nth-child(1)::after {
+  content: "Панорама дня";
+  position: absolute;
+  width: 121px;
+  height: 29px;
+  right: -227px;
+  bottom: 142px;
+  padding-left: 19px;
+  padding-top: 6px;
+  background-color: $pink;
+  font-family: "OpenSans bold", sans-serif;
+  color: $white;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.gallery__elem:nth-child(4) .photo__img:nth-child(1),
+.gallery__elem:nth-child(5) .photo__img:nth-child(1),
+.gallery__elem:nth-child(6) .photo__img:nth-child(1),
+.gallery__elem:nth-child(7) .photo__img:nth-child(1) {
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+.gallery__elem:nth-child(8) .photo__img:nth-child(1),
+.gallery__elem:nth-child(9) .photo__img:nth-child(1) {
+  margin-left: 20px;
+  margin-top: 16px;
+}
+
+.gallery__text--bottom {
+  color: $gray;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  padding-left: 26px;
+  padding-right: 30px;
+  margin-top: 36px;
+  padding-bottom: 0;
+}

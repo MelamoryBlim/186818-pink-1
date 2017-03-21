@@ -1,0 +1,28 @@
+.price {
+  width: 320px;
+  height: 390px;
+  position: relative;
+  top: 248px;
+  overflow: hidden;
+  @media ($tablet-widths) {
+    width: 700px;
+    height: 290px;
+    background-color: $lightgray;
+  }
+  @media ($desktop-widths) {
+    width: 1200px;
+    top: 403px;
+    min-height: 443px;
+  }
+}
+
+.price__bottom {
+  width: 320px;
+  height: 100px;
+  position: relative;
+  top: 266px;
+  background-color: $lightgray;
+  @media ($tablet-widths) {
+    display: none;
+  }
+}
