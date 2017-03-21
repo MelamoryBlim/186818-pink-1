@@ -1,0 +1,189 @@
+.page-footer {
+  display: block;
+  position: relative;
+  top: 26px;
+  margin-top: 41px;
+  @media ($desktop-widths) {
+    width: 1200px;
+  }
+}
+
+.page-footer--index {
+  @media ($mobile-widths) {
+    display: none;
+  }
+  @media ($tablet-widths) {
+    display: block;
+    top: 190px;
+    font-size: 0;
+    @include clearfix;
+  }
+  @media ($desktop-widths) {
+    top: 375px;
+    min-height: 164px;
+  }
+}
+
+.footer-logo {
+  margin-left: 86px;
+  @media ($tablet-widths) {
+    width: 190px;
+    float: left;
+    margin-left: 0;
+    padding-left: 39px;
+    padding-top: 36px;
+  }
+}
+
+.logo-pink-blue-mobile {
+  width: 146px;
+  height: 40px;
+}
+
+.footer-socnet {
+  @media ($tablet-widths) {
+    float: left;
+    width: 250px;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  @media ($desktop-widths) {
+    margin-left: 253px;
+  }
+}
+
+.footer-socnet__icons {
+  list-style: none;
+  min-height: 70px;
+  @media ($tablet-widths) {
+    margin-left: 0;
+  }
+}
+
+.icon-twitter {
+  float: left;
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  position: relative;
+  top: 36px;
+  left: 48px;
+  fill: $pink;
+  @media ($tablet-widths) {
+    left: 7px;
+  }
+}
+
+.icon-facebook {
+  float: left;
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  position: relative;
+  top: 34px;
+  left: 42px;
+  fill: $pink;
+  @media ($tablet-widths) {
+    left: 0;
+  }
+}
+
+.icon-youtube {
+  float: left;
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: 36px;
+  left: 39px;
+  fill: $pink;
+  @media ($tablet-widths) {
+    left: -1px;
+  }
+}
+
+.footer-socnet__icons--icon-twitter::after {
+  content: "";
+  float: left;
+  display:block;
+  width: 45px;
+  height: 45px;
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
+  position: relative;
+  top: 19px;
+  left: 13px;
+  @media ($tablet-widths) {
+    left: -29px;
+  }
+}
+
+.footer-socnet__icons--icon-facebook::after {
+  content: "";
+  float: left;
+  display: block;
+  width: 45px;
+  height: 45px;
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
+  position: relative;
+  top: 19px;
+  left: 7px;
+  @media ($tablet-widths) {
+    left: -35px;
+  }
+}
+
+.footer-socnet__icons--icon-youtube::after {
+  content: "";
+  float: left;
+  display: block;
+  width: 45px;
+  height: 45px;
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
+  position: relative;
+  top: 19px;
+  left: 4px;
+  @media ($tablet-widths) {
+    left: -35px;
+  }
+}
+
+.footer-copyright {
+  @media ($tablet-widths) {
+    width: 200px;
+    float: right;
+  }
+  @media ($desktop-widths) {
+    margin-right: 111px;
+  }
+}
+
+.footer-copyright__text {
+  @media ($tablet-widths) {
+    margin-left: 30px;
+    margin-top: 26px;
+  }
+  @media ($desktop-widths) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+.footer-copyright__logo-htmlacademy svg{
+  @media ($tablet-widths) {
+    position: relative;
+    left: -39px;
+  }
+  @media ($desktop-widths) {
+    left: -13px;
+  }
+}
+
+.page-footer--form {
+  top: -90px;
+}

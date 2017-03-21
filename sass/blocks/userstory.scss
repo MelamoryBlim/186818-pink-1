@@ -1,0 +1,370 @@
+.userstory {
+  display: block;
+  position: relative;
+}
+
+.userstory__promo {
+  color: $gray;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 46px;
+}
+
+.user-form__form-group {
+  border: none;
+}
+
+.user-form__username-label {
+  display: block;
+  color: $pink;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-left: 30px;
+  margin-top: 14px;
+  margin-bottom: 5px;
+}
+
+.user-form__username-input {
+  color: $gray;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  width: 255px;
+  height: 57px;
+  border: 2px solid #e5e5e5;
+  padding-left: 21px;
+  margin-left: 8px;
+  margin-bottom: 3px;
+}
+
+::-webkit-input-placeholder {
+  color: $gray;
+}
+
+:-moz-placeholder {
+  color: $gray;
+}
+
+::-moz-placeholder {
+  color: $gray;
+}
+
+:-ms-input-placeholder {
+  color: $gray;
+}
+
+.user-form__form-group--achievements {
+  display: block;
+  position: relative;
+  top: -47px;
+  width: 300px;
+  background-color: $lightgray;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 30px;
+}
+
+.user-form__legend {
+  color: $pink;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-top: 112px;
+}
+
+.user-form__achievement-input {
+  display: none;
+}
+
+.user-form__achievement-label {
+  display: inline-block;
+  color: $gray;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  padding-top: 14px;
+  padding-bottom: 38px;
+  padding-left: 50px;
+}
+
+.user-form__achievement-label::before {
+  content: "";
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  position: relative;
+  top: -5px;
+  left: -30px;
+  float: left;
+  background-color: $white;
+  border: 2px solid #e5e5e5;
+  margin-left: -10px;
+  margin-bottom: -10px;
+  cursor: pointer;
+}
+
+.user-form__achievement-input:checked + label::before {
+  content: "";
+  display: inline-block;
+  background-image: url('data:image/svg+xml;utf8,<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve" fill="#d4305c">
+  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+</svg>');
+  background-repeat: no-repeat;
+  background-position: 7px 7px;
+  background-size: 22px 18px;
+  height: 35px;
+  width: 35px;
+  position: relative;
+  top: -5px;
+  left: -30px;
+  float: left;
+  background-color: $white;
+  border: 2px solid #e5e5e5;
+  margin-left: -10px;
+  margin-bottom: -10px;
+  cursor: pointer;
+}
+
+.user-form__form-group--communications {
+  display: block;
+  position: relative;
+  top: -50px;
+  width: 300px;
+  background-color: $white;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 30px;
+}
+
+.user-form__communication-label {
+  display: block;
+  color: $pink;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-left: 32px;
+  margin-top: 1px;
+  margin-bottom: 5px;
+}
+
+.user-form__input-phone,
+.user-form__input-email {
+  color: $gray;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  width: 255px;
+  height: 57px;
+  border: 2px solid #e5e5e5;
+  padding-left: 21px;
+  margin-left: 10px;
+  margin-bottom: 16px;
+}
+
+.user-form__form-group--platform {
+  display: block;
+  position: relative;
+  top: -109px;
+  width: 300px;
+  background-color: $lightgray;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 30px;
+}
+
+.user-form__input-radio {
+  display: none;
+}
+
+.user-form__platform-label {
+  display: inline-block;
+  color: $gray;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  padding-top: 8px;
+  padding-bottom: 37px;
+  padding-left: 50px;
+}
+
+.user-form__platform-label::before {
+  content: "";
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  position: relative;
+  top: -4px;
+  left: -30px;
+  float: left;
+  background-color: $white;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  margin-left: -10px;
+  margin-bottom: -10px;
+  cursor: pointer;
+}
+
+.user-form__input-radio:checked + label::before {
+  content: "";
+  display: inline-block;
+  background-image: url('data:image/svg+xml;utf8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px" height="15px" viewBox="0 0 35.983 35.983" enable-background="new 0 0 35.983 35.983" xml:space="preserve">
+  <circle fill="#d22856" cx="10" cy="10" r="7.5"/></svg>');
+  background-repeat: no-repeat;
+  background-position: 8px 8px;
+  background-size: 35px 35px;
+  height: 35px;
+  width: 35px;
+  position: relative;
+  top: -4px;
+  left: -30px;
+  float: left;
+  background-color: $white;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  margin-left: -10px;
+  margin-bottom: -10px;
+  cursor: pointer;
+}
+
+.user-form__form-group--emotions {
+  display: block;
+  position: relative;
+  top: -169px;
+  width: 300px;
+  background-color: $white;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 17px;
+}
+
+.user-form__form-group--emotions .user-form__legend:nth-child(1) {
+  padding-top: 96px;
+}
+
+.user-form__emotion-text {
+  width: 255px;
+  height: 182px;
+  margin-left: 10px;
+  resize: none;
+  color: $gray;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  padding-left: 20px;
+  padding-top: 14px;
+}
+
+.user-form__btn {
+  display: block;
+  position: relative;
+  width: 280px;
+  height: 63px;
+  font-family: "OpenSans bold", sans-serif;
+  color: $white;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  background-color: $green;
+  border: 1px solid $green;
+  border-radius: 2px;
+  margin-left: 20px;
+  top: -138px;
+}
+
+.user-form__note {
+  position: relative;
+  top: -103px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $gray;
+  text-align: center;
+}
+
+.user-form__note--redstar {
+  color: $pink;
+}
+
+// 1-й попап
+.user-form__error-popup {
+  border: 1px solid red;
+  position: absolute;
+  width: 320px;
+  height: 290px;
+  top: 3014px;
+}
+
+// 2-й попап
+.user-form__send-popup {
+  border: 1px solid blue;
+  position: absolute;
+  width: 320px;
+  height: 380px;
+  top: 3304px;
+}
+
+.user-form__error-popup-header,
+.user-form__send-popup-header {
+  line-height: 24px;
+  color: $black;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 22px;
+  padding-bottom: 8px;
+}
+
+.user-form__error-popup-text,
+.user-form__send-popup-text {
+  line-height: 24px;
+  color: $gray;
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.user-form__error-popup-btn,
+.user-form__send-popup-btn {
+  display: block;
+  position: relative;
+  width: 280px;
+  height: 63px;
+  color: $white;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  background-color: $green;
+  border: 1px solid $green;
+  border-radius: 2px;
+  margin-left: 20px;
+  top: 24px;
+}
+
+.user-form__send-popup-btn {
+  top: 48px;
+}
+
+.user-form__send-popup--bg {
+  display: block;
+  position: relative;
+  width: 320px;
+  height: 160px;
+  background-color: $lightgray;
+  top: 16px;
+}

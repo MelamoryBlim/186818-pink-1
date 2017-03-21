@@ -1,0 +1,73 @@
+.page-header--index {
+  display: flex;
+  flex-direction: column;
+  background-color: $gray;
+  @media ($mobile-widths-only) {
+    min-height: 462px;
+    background-image: url(../img/iphone-hand-mobile@1x.png), url(../img/bg-back-mobile@1x.jpg);
+    background-position: 0 176px, -190px 0;
+    background-repeat: no-repeat, no-repeat;
+  }
+  @media ($tablet-widths) {
+    min-height: 721px;
+  }
+  @media ($desktop-widths) {
+    min-height: 853px;
+  }
+}
+
+.page-header--photo {
+  display: flex;
+  flex-direction: column;
+  min-height: 237px;
+  background-color: $gray;
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-position: -190px 0;
+  background-repeat: no-repeat;
+}
+
+.page-header--form {
+  display: flex;
+  flex-direction: column;
+  min-height: 237px;
+  background-color: $gray;
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-position: -190px 0;
+  background-repeat: no-repeat;
+}
+
+.page-header__competition-title {
+  color: $white;
+  font-family: 'OpenSans light', sans-serif;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 35px;
+}
+
+/* NoJS */
+.page-header--index.page-header--nojs {
+  min-height: 721px;
+  background-position: 0 435px, -190px 259px;
+}
+
+.page-header--photo.page-header--nojs {
+  min-height: 495px;
+  background-position: -190px 259px;
+}
+
+.page-header--form.page-header--nojs {
+  min-height: 495px;
+  background-position: -190px 259px;
+}
+
+.page-header--nojs .main-nav__toggle {
+  display: none;
+}
+
+.page-header--nojs .main-nav__list {
+  display: block;
+}

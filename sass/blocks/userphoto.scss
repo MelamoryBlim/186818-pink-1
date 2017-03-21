@@ -1,0 +1,104 @@
+.userphoto {
+  position: relative;
+  top: 28px;
+  background-color: $lightgray;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.userphoto__tools {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.icon-editor-crop {
+  width: 48px;
+  position: relative;
+  left: -62px;
+  cursor: pointer;
+}
+
+.icon-editor-fill {
+  position: relative;
+  width: 48px;
+  top: 2px;
+  left: -30px;
+  cursor: pointer;
+}
+
+.icon-editor-contrast {
+  position: relative;
+  width: 32px;
+  top: 8px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.userphoto__control {
+  margin-top: 32px;
+  padding-bottom: 34px;
+}
+
+.userphoto__bar {
+  width: 240px;
+  height: 2px;
+  margin-left: 18px;
+  background: $gray;
+}
+
+.userphoto__slider {
+  position: absolute;
+  top: 513px;
+  left: 231px;
+  width: 10px;
+  height: 10px;
+  background: $lightgray;
+  border: 2px solid $pink;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.userphoto__separator {
+  width: 320px;
+  height: 1px;
+  margin-left: -20px;
+  background: #dddfe0;
+}
+
+.userphoto__btn--posting {
+  font-family: "OpenSans bold", sans-serif;
+  color: $pink;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  border: solid 3px $pink;
+  background-color: transparent;
+  border-radius: 26px;
+  padding-top: 14px;
+  padding-bottom: 17px;
+  padding-left: 86px;
+  padding-right: 86px;
+  margin-top: 38px;
+}
+
+.userphoto__btn--cancel {
+  font-family: "OpenSans bold", sans-serif;
+  color: #e3e4e4;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  border: solid 3px #dddfe0;
+  background-color: transparent;
+  border-radius: 26px;
+  padding-top: 14px;
+  padding-bottom: 17px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 12px;
+  margin-bottom: 41px;
+}

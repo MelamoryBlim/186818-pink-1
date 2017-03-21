@@ -1,0 +1,19 @@
+.intro {
+  @media ($mobile-widths-only) {
+    display: none;
+  }
+  @media ($tablet-widths) {
+    width: 340px;
+    min-height: 533px;
+    margin-top: -533px;
+    background-color: $gray;
+    outline: 1px solid red;
+  }
+  @media ($desktop-widths) {
+    width: 590px;
+    min-height: 853px;
+    margin-top: -853px;
+    background-color: $gray;
+    outline: 1px solid red;
+  }
+}
