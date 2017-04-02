@@ -5,6 +5,66 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
+  @media ($tablet-widths) {
+    height: 455px;
+    padding-left: 40px;
+    padding-top: 58px;
+  }
+  @media ($desktop-widths) {
+    width: 840px;
+    margin-left: 130px;
+    padding-left: 80px;
+  }
+}
+
+.userphoto::after {
+  @media ($tablet-widths) {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.userphoto__control {
+  @media ($tablet-widths) {
+    display: none;
+  }
+}
+
+.userphoto__control--crop,
+.userphoto__control--fill,
+.userphoto__control--contrast {
+  @media ($mobile-widths-only) {
+    display: none;
+  }
+  @media ($tablet-widths) {
+    display: flex;
+  }
+}
+
+.userphoto__current {
+  @media ($tablet-widths) {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 55px;
+  }
+}
+
+.userphoto__posting {
+  @media ($tablet-widths) {
+    float: left;
+    height: 470px;
+    width: 320px;
+  }
+  @media ($desktop-widths) {
+    width: 460px;
+  }
+}
+
+.userphoto::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .userphoto__tools {
@@ -12,6 +72,9 @@
   display: flex;
   justify-content: center;
   margin-top: 35px;
+  @media ($tablet-widths) {
+    display: block;
+  }
 }
 
 .icon-editor-crop {
@@ -19,6 +82,19 @@
   position: relative;
   left: -62px;
   cursor: pointer;
+  @media ($tablet-widths) {
+    width: 22px;
+    height: 22px;
+    left: -13px;
+    top: -26px;
+    fill: $pink;
+  }
+  @media ($desktop-widths) {
+    width: 48px;
+    height: 48px;
+    left: 28px;
+    top: -40px;
+  }
 }
 
 .icon-editor-fill {
@@ -27,6 +103,19 @@
   top: 2px;
   left: -30px;
   cursor: pointer;
+  @media ($tablet-widths) {
+    width: 26px;
+    height: 24px;
+    left: -13px;
+    top: -46px;
+    fill: $pink;
+  }
+  @media ($desktop-widths) {
+    width: 60px;
+    height: 48px;
+    left: 25px;
+    top: -83px;
+  }
 }
 
 .icon-editor-contrast {
@@ -35,6 +124,19 @@
   top: 8px;
   left: 10px;
   cursor: pointer;
+  @media ($tablet-widths) {
+    width: 17px;
+    height: 17px;
+    left: -8px;
+    top: -69px;
+    fill: $pink;
+  }
+  @media ($desktop-widths) {
+    width: 34px;
+    height: 34px;
+    left: 35px;
+    top: -127px;
+  }
 }
 
 .userphoto__control {
@@ -49,6 +151,46 @@
   background: $gray;
 }
 
+.userphoto__control--crop > .userphoto__bar {
+  @media ($tablet-widths) {
+    width: 202px;
+    position: relative;
+    margin-left: 40px;
+    margin-top: -75px;
+  }
+  @media ($desktop-widths) {
+    width: 288px;
+    margin-left: 122px;
+    margin-top: -101px;
+  }
+}
+
+.userphoto__control--fill > .userphoto__bar {
+  @media ($tablet-widths) {
+    width: 202px;
+    margin-left: 40px;
+    margin-top: -97px;
+  }
+  @media ($desktop-widths) {
+    width: 288px;
+    margin-left: 122px;
+    margin-top: -147px;
+  }
+}
+
+.userphoto__control--contrast > .userphoto__bar {
+  @media ($tablet-widths) {
+    width: 202px;
+    margin-left: 40px;
+    margin-top: -115px;
+  }
+  @media ($desktop-widths) {
+    width: 288px;
+    margin-left: 122px;
+    margin-top: -182px;
+  }
+}
+
 .userphoto__slider {
   position: absolute;
   top: 513px;
@@ -61,11 +203,89 @@
   cursor: pointer;
 }
 
+.userphoto__control--crop > .userphoto__slider {
+  @media ($tablet-widths) {
+    top: 71px;
+    left: 586px;
+  }
+  @media ($desktop-widths) {
+    left: 633px;
+  }
+}
+
+.userphoto__control--fill > .userphoto__slider {
+  @media ($tablet-widths) {
+    top: 144px;
+    left: 465px;
+  }
+  @media ($desktop-widths) {
+    left: 810px;
+  }
+}
+
+.userphoto__control--contrast > .userphoto__slider {
+  @media ($tablet-widths) {
+    top: 214px;
+    left: 536px;
+  }
+  @media ($desktop-widths) {
+    left: 723px;
+  }
+}
+
 .userphoto__separator {
   width: 320px;
   height: 1px;
   margin-left: -20px;
   background: #dddfe0;
+  @media ($tablet-widths) {
+    display: none;
+  }
+}
+
+.userphoto__control--crop > .userphoto__separator {
+  @media ($tablet-widths) {
+    display: block;
+    position: absolute;
+    width: 275px;
+    margin-left: -14px;
+    margin-top: -39px;
+  }
+  @media ($desktop-widths) {
+    width: 410px;
+    margin-left: 30px;
+    margin-top: -65px;
+  }
+}
+
+.userphoto__control--fill > .userphoto__separator {
+  @media ($tablet-widths) {
+    display: block;
+    position: absolute;
+    width: 275px;
+    margin-left: -14px;
+    margin-top: -61px;
+  }
+  @media ($desktop-widths) {
+    width: 410px;
+    margin-left: 30px;
+    margin-top: -111px;
+  }
+}
+
+.userphoto__control--contrast > .userphoto__separator {
+  @media ($tablet-widths) {
+    display: block;
+    position: absolute;
+    width: 275px;
+    margin-left: -14px;
+    margin-top: -79px;
+  }
+  @media ($desktop-widths) {
+    width: 410px;
+    margin-left: 30px;
+    margin-top: -146px;
+  }
 }
 
 .userphoto__btn--posting {
@@ -83,6 +303,19 @@
   padding-left: 86px;
   padding-right: 86px;
   margin-top: 38px;
+  @media ($tablet-widths) {
+    position: relative;
+    top: -98px;
+    margin-left: 27px;
+    padding-left: 78px;
+    padding-right: 78px;
+  }
+  @media ($desktop-widths) {
+    top: -88px;
+    margin-left: 70px;
+    padding-left: 40px;
+    padding-right: 38px;
+  }
 }
 
 .userphoto__btn--cancel {
@@ -101,4 +334,19 @@
   padding-right: 100px;
   margin-top: 12px;
   margin-bottom: 41px;
+  @media ($tablet-widths) {
+    position: relative;
+    top: -86px;
+    margin-left: 27px;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: -58px;
+  }
+  @media ($desktop-widths) {
+    top: -154px;
+    left: 230px;
+    margin-left: 68px;
+    padding-left: 52px;
+    padding-right: 50px;
+  }
 }
