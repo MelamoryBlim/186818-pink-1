@@ -10,30 +10,64 @@
   }
   @media ($tablet-widths) {
     min-height: 721px;
+    background-image: url(../img/iphone-hand-tablet@1x.png), url(../img/bg-back-tablet@1x.jpg);
+    background-position: 0 176px, -250px 0;
+    background-repeat: no-repeat, no-repeat;
   }
   @media ($desktop-widths) {
     min-height: 853px;
+    background-image: url(../img/iphone-hand-desktop@1x.png), url(../img/bg-back-desktop@1x.jpg);
+    background-position: 143px 208px, -682px 0;
+    background-repeat: no-repeat, no-repeat;
   }
 }
 
 .page-header--photo {
   display: flex;
   flex-direction: column;
-  min-height: 237px;
   background-color: $gray;
-  background-image: url(../img/bg-back-mobile@1x.jpg);
-  background-position: -190px 0;
-  background-repeat: no-repeat;
+  @media ($mobile-widths-only) {
+    min-height: 237px;
+    background-image: url(../img/bg-back-mobile@1x.jpg);
+    background-position: -190px 0;
+    background-repeat: no-repeat;
+  }
+  @media ($tablet-widths) {
+    min-height: 440px;
+    background-image: url(../img/bg-back-tablet@1x.jpg);
+    background-position: -250px 0;
+    background-repeat: no-repeat;
+  }
+  @media ($desktop-widths) {
+    min-height: 394px;
+    background-image: url(../img/bg-back-desktop@1x.jpg);
+    background-position: -680px 0;
+    background-repeat: no-repeat;
+  }
 }
 
 .page-header--form {
   display: flex;
   flex-direction: column;
-  min-height: 237px;
   background-color: $gray;
-  background-image: url(../img/bg-back-mobile@1x.jpg);
-  background-position: -190px 0;
-  background-repeat: no-repeat;
+  @media ($mobile-widths-only) {
+    min-height: 237px;
+    background-image: url(../img/bg-back-mobile@1x.jpg);
+    background-position: -190px 0;
+    background-repeat: no-repeat;
+  }
+  @media ($tablet-widths) {
+    min-height: 440px;
+    background-image: url(../img/bg-back-tablet@1x.jpg);
+    background-position: -250px 0;
+    background-repeat: no-repeat;
+  }
+  @media ($desktop-widths) {
+    min-height: 394px;
+    background-image: url(../img/bg-back-desktop@1x.jpg);
+    background-position: -680px 0;
+    background-repeat: no-repeat;
+  }
 }
 
 .page-header__competition-title {
@@ -45,7 +79,24 @@
   text-align: center;
   padding-left: 40px;
   padding-right: 40px;
-  margin-top: 35px;
+  margin-top: 32px;
+  @media ($tablet-widths) {
+    font-size: 50px;
+    line-height: 60px;
+    margin-top: 53px;
+  }
+  @media ($desktop-widths) {
+    margin-top: 62px;
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+}
+
+.page-header--form > .page-header__competition-title {
+  @media ($desktop-widths) {
+    margin-left: 180px;
+    margin-right: 180px;
+  }
 }
 
 /* NoJS */

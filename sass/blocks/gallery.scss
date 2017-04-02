@@ -13,6 +13,124 @@
   padding-right: 38px;
   padding-top: 33px;
   padding-bottom: 35px;
+  @media ($tablet-widths) {
+    font-size: 18px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 73px;
+    padding-bottom: 58px;
+  }
+  @media ($desktop-widths) {
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 30px;
+  }
+}
+
+.photo--panorama > .photo__text {
+  @media ($tablet-widths) {
+    width: 620px;
+    top: -5px;
+    min-height: 120px;
+    margin-left: 40px;
+    margin-bottom: 47px;
+  }
+  @media ($desktop-widths) {
+    width: 940px;
+    margin-left: 130px;
+    min-height: 96px;
+    margin-bottom: 46px;
+  }
+}
+
+.photo--panorama .photo__likes-counter {
+  @media ($tablet-widths) {
+    margin-top: 0;
+  }
+  @media ($desktop-widths) {
+    margin-left: 316px;
+    margin-top: 24px;
+  }
+}
+
+.photo--panorama .icon-heart {
+  @media ($tablet-widths) {
+    margin-top: 0;
+  }
+  @media ($desktop-widths) {
+    margin-top: 24px;
+  }
+}
+
+.photo--panorama .photo__text--story {
+  @media ($desktop-widths) {
+    width: 900px;
+  }
+}
+
+.gallery__elem {
+  margin-bottom: 15px;
+}
+
+.gallery__elem:nth-child(4),
+.gallery__elem:nth-child(5),
+.gallery__elem:nth-child(6),
+.gallery__elem:nth-child(7),
+.gallery__elem:nth-child(8),
+.gallery__elem:nth-child(9) {
+  @media ($tablet-widths) {
+    width: 300px;
+    height: 455px;
+    float: left;
+    margin-bottom: 20px;
+  }
+}
+
+.gallery__elem:nth-child(4),
+.gallery__elem:nth-child(6),
+.gallery__elem:nth-child(8) {
+  @media ($tablet-widths) {
+    margin-left: 40px;
+  }
+}
+
+.gallery__elem:nth-child(5),
+.gallery__elem:nth-child(7),
+.gallery__elem:nth-child(9) {
+  @media ($tablet-widths) {
+    margin-left: 20px;
+  }
+}
+
+.gallery__elem:nth-child(4),
+.gallery__elem:nth-child(7) {
+  @media ($desktop-widths) {
+    margin-left: 130px;
+  }
+}
+
+.gallery__elem:nth-child(6),
+.gallery__elem:nth-child(8),
+.gallery__elem:nth-child(9) {
+  @media ($desktop-widths) {
+    margin-left: 20px;
+  }
+}
+
+.gallery__elem:nth-child(4),
+.gallery__elem:nth-child(5),
+.gallery__elem:nth-child(6) {
+  @media ($desktop-widths) {
+    margin-bottom: 154px;
+  }
+}
+
+.gallery__elem:nth-child(7),
+.gallery__elem:nth-child(8),
+.gallery__elem:nth-child(9) {
+  @media ($desktop-widths) {
+    margin-bottom: 90px;
+  }
 }
 
 .photo__text {
@@ -21,7 +139,36 @@
   position: relative;
   margin-left: 20px;
   margin-right: 20px;
-  top: -6px;
+  top: -5px;
+}
+
+div.photo__text {
+  @media ($tablet-widths) {
+    width: 300px;
+    margin-left: 0;
+  }
+}
+
+.gallery__elem:nth-child(4) div.photo__text,
+.gallery__elem:nth-child(5) div.photo__text,
+.gallery__elem:nth-child(6) div.photo__text,
+.gallery__elem:nth-child(7) div.photo__text,
+.gallery__elem:nth-child(8) div.photo__text,
+.gallery__elem:nth-child(9) div.photo__text {
+  @media ($tablet-widths) {
+    height: 155px;
+  }
+}
+
+.gallery__elem:nth-child(4) .photo__text--story,
+.gallery__elem:nth-child(5) .photo__text--story,
+.gallery__elem:nth-child(6) .photo__text--story,
+.gallery__elem:nth-child(7) .photo__text--story,
+.gallery__elem:nth-child(8) .photo__text--story,
+.gallery__elem:nth-child(9) .photo__text--story {
+  @media ($tablet-widths) {
+    width: 250px;
+  }
 }
 
 .photo__text::after {
@@ -39,6 +186,11 @@
   font-weight: 700;
   margin-top: 23px;
   margin-left: 17px;
+  @media ($tablet-widths) {
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 28px;
+  }
 }
 
 .photo__text--time {
@@ -62,6 +214,23 @@
   margin-left: 18px;
   margin-top: 0;
   margin-bottom: 2px;
+  @media ($tablet-widths) {
+    width: 520px;
+    margin-left: 28px;
+  }
+}
+
+.photo__likes {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.photo__likes-counter {
+  float: left;
+  @media ($tablet-widths) {
+    margin-top: -15px;
+  }
 }
 
 .icon-heart {
@@ -72,6 +241,25 @@
   fill: $pink;
   margin-right: 19px;
   margin-top: 1px;
+  @media ($tablet-widths) {
+    float: right;
+    margin-right: 0;
+    margin-left: 17px;
+  }
+}
+
+.gallery__elem:nth-child(4) .icon-heart,
+.gallery__elem:nth-child(5) .icon-heart,
+.gallery__elem:nth-child(6) .icon-heart,
+.gallery__elem:nth-child(7) .icon-heart,
+.gallery__elem:nth-child(8) .icon-heart,
+.gallery__elem:nth-child(9) .icon-heart {
+  @media ($tablet-widths) {
+    float: right;
+    margin-right: 31px;
+    margin-left: 180px;
+    margin-top: 15px;
+  }
 }
 
 .photo__likes {
@@ -84,6 +272,33 @@
   text-transform: uppercase;
   padding-left: 18px;
   margin-top: -19px;
+  @media ($tablet-widths) {
+    margin-left: 454px;
+    margin-top: -100px;
+  }
+}
+
+.gallery__elem:nth-child(4) .photo__likes,
+.gallery__elem:nth-child(5) .photo__likes,
+.gallery__elem:nth-child(6) .photo__likes,
+.gallery__elem:nth-child(7) .photo__likes,
+.gallery__elem:nth-child(8) .photo__likes,
+.gallery__elem:nth-child(9) .photo__likes {
+  @media ($tablet-widths) {
+    position: relative;
+    left: 0;
+    bottom: -70px;
+    margin-left: 10px;
+  }
+}
+
+.gallery__elem:nth-child(5) .photo__likes,
+.gallery__elem:nth-child(7) .photo__likes,
+.gallery__elem:nth-child(8) .photo__likes,
+.gallery__elem:nth-child(9) .photo__likes {
+  @media ($tablet-widths) {
+    bottom: -94px;
+  }
 }
 
 .gallery__elem:nth-child(3) .photo__text:nth-child(1)::after {
@@ -92,7 +307,7 @@
   width: 121px;
   height: 29px;
   right: -227px;
-  bottom: 142px;
+  bottom: 144px;
   padding-left: 19px;
   padding-top: 6px;
   background-color: $pink;
@@ -102,6 +317,14 @@
   font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
+  @media ($tablet-widths) {
+    left: 453px;
+    top: -477px;
+  }
+  @media ($desktop-widths) {
+    left: 773px;
+    top: -476px;
+  }
 }
 
 .gallery__elem:nth-child(4) .photo__img:nth-child(1),
@@ -110,12 +333,24 @@
 .gallery__elem:nth-child(7) .photo__img:nth-child(1) {
   margin-left: 20px;
   margin-top: 15px;
+  @media ($tablet-widths) {
+    margin-left: 0;
+  }
 }
 
 .gallery__elem:nth-child(8) .photo__img:nth-child(1),
 .gallery__elem:nth-child(9) .photo__img:nth-child(1) {
   margin-left: 20px;
   margin-top: 16px;
+  @media ($tablet-widths) {
+    margin-left: 0;
+  }
+}
+
+.gallery__elem:nth-child(9) {
+  @media ($tablet-widths) {
+    margin-bottom: 65px;
+  }
 }
 
 .gallery__text--bottom {
@@ -128,4 +363,12 @@
   padding-right: 30px;
   margin-top: 36px;
   padding-bottom: 0;
+  @media ($tablet-widths) {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  @media ($desktop-widths) {
+    margin-top: 1269px;
+    margin-bottom: 37px;
+  }
 }

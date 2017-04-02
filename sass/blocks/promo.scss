@@ -8,13 +8,11 @@
     top: 293px;
     width: 700px;
     height: 495px;
-    outline: 1px solid blue;
   }
   @media ($desktop-widths) {
     top: 415px;
     width: 1200px;
     height: 495px;
-    outline: 1px solid blue;
   }
 }
 
@@ -38,13 +36,37 @@
   border-left-color: transparent;
   border-top-color: transparent;
   @media ($tablet-widths) {
-    top: -55px;
-    outline: 1px solid red;
+    top: -54px;
     border-width: 27px 350px;
   }
   @media ($desktop-widths) {
-    top: -93px;
+    top: -92px;
     border-width: 46px 600px;
+  }
+}
+
+.promo::after {
+  @media ($tablet-widths) {
+    position: relative;
+    top: -470px;
+    display: block;
+    content: "";
+    width: 310px;
+    height: 486px;
+    background-image: url(../img/iphone-screen-3-tablet@1x.png);
+    background-position: 40px 0;
+    background-repeat: no-repeat;
+  }
+  @media ($desktop-widths) {
+    position: relative;
+    display: block;
+    content: "";
+    top: -670px;
+    width: 1200px;
+    height: 486px;
+    background-image: url(../img/iphone-screen-1-desktop@1x.png), url(../img/iphone-screen-2-desktop@1x.png), url(../img/iphone-screen-3-desktop@1x.png);
+    background-position: 133px 80px, 457px 80px, 775px 80px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
   }
 }
 
@@ -89,13 +111,15 @@
   margin-top: -160px;
   @media ($tablet-widths) {
     margin-top: -310px;
-    margin-left: 349px;
+    padding-left: 349px;
     margin-right: auto;
   }
   @media ($desktop-widths) {
     display: flex;
     margin-left: 120px;
     margin-right: 120px;
+    margin-top: -310px;
+    padding-left: 0;
   }
 }
 
@@ -113,6 +137,8 @@
   }
   @media ($desktop-widths) {
     margin-top: 330px;
+    margin-left: 40px;
+    margin-right: 40px;
     font-size: 30px;
     line-height: 30px;
     text-align: center;
@@ -135,6 +161,9 @@
     margin-bottom: 29px;
   }
   @media ($desktop-widths) {
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
     font-size: 18px;
     line-height: 30px;
     text-align: center;

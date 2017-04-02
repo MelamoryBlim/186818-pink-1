@@ -1,7 +1,15 @@
 .promo-image {
-  min-height: 396px;
-  background-image: url(../img/iphone-screen-mobile@1x.png);
-  background-repeat: no-repeat;
-  background-position: 83px 15px;
-  z-index: 10;
+  @media ($mobile-widths-only) {
+    min-height: 396px;
+    background-image: url(../img/iphone-screen-mobile@1x.png);
+    background-repeat: no-repeat;
+    background-position: 83px 15px;
+    z-index: 10;
+  }
+  @media ($tablet-widths) {
+    display: none;
+  }
+  @media ($desktop-widths) {
+    display: none;
+  }
 }
