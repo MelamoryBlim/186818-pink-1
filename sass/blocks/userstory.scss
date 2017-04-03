@@ -733,41 +733,51 @@
 
 // 1-й попап
 .user-form__error-popup {
+  display: none;
   border: 1px solid #ededed;
   border-radius: 4px;
   position: absolute;
-  width: 320px;
+  width: 318px;
   height: 290px;
   top: 3014px;
+  box-shadow: 0 15px 15px #ededed;
+  background-color: $white;
   @media ($tablet-widths) {
     width: 460px;
     height: 363px;
     top: 3305px;
+    margin-left: 120px;
     box-shadow: 0 5px 15px #ededed;
   }
   @media ($desktop-widths) {
     top: 2075px;
+    margin-left: 370px;
   }
 }
 
 // 2-й попап
 .user-form__send-popup {
+  display: none;
   border: 1px solid #ededed;
   border-radius: 4px;
   position: absolute;
-  width: 320px;
+  width: 318px;
   height: 380px;
   top: 3304px;
+  background-color: $white;
+  box-shadow: 0 15px 15px #ededed;
   @media ($tablet-widths) {
     width: 460px;
     height: 431px;
     top: 3680px;
+    margin-left: 120px;
     box-shadow: 0 5px 15px #ededed;
   }
   @media ($desktop-widths) {
     top: 2450px;
     width: 780px;
     height: 378px;
+    margin-left: 210px;
   }
 }
 
@@ -858,7 +868,7 @@
   display: block;
   position: relative;
   width: 320px;
-  height: 160px;
+  height: 165px;
   background-color: $lightgray;
   top: 16px;
   @media ($tablet-widths) {

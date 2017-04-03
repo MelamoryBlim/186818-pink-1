@@ -36,15 +36,20 @@
 }
 
 .page-footer--form {
+  @media ($mobile-widths-only) {
+    margin-top: -76px;
+  }
   @media ($tablet-widths) {
     position: relative;
     height: 120px;
-    margin-top: 1100px;
+    margin-top: 984px;
+    margin-bottom: 25px;
   }
   @media ($desktop-widths) {
     height: 178px;
-    margin-top: 280px;
+    margin-top: 164px;
     margin-left: 3px;
+    margin-bottom: 0;
   }
 }
 
@@ -262,9 +267,9 @@
   }
 }
 
-.page-footer--form {
-  top: -90px;
-}
+//.page-footer--form {
+//  top: -90px;
+//}
 
 @media ($mobile-widths-only) {
   .logo-pink-blue-desktop,
