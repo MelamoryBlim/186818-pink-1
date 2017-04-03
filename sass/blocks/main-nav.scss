@@ -48,7 +48,6 @@
     height: 110px;
     opacity: 0.45;
   }
-
 }
 
 /* гамбургер или крестик */
@@ -88,9 +87,14 @@
   box-shadow: 0 10px 0 0 $white, 0 20px 0 0 $white;
 }
 
+.main-nav--closed .main-nav__toggle:hover::before {
+  background-color: rgb(210, 40, 86);
+  box-shadow: 0 10px 0 0 rgb(210, 40, 86), 0 20px 0 0 rgb(210, 40, 86);
+}
+
 .main-nav--closed .main-nav__toggle:active::before {
-  background-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 10px 0 0 rgba(255, 255, 255, 0.3), 0 20px 0 0 rgba(255, 255, 255, 0.3);
+  background-color: rgba(210, 40, 86, 0.3);
+  box-shadow: 0 10px 0 0 rgba(210, 40, 86, 0.3), 0 20px 0 0 rgba(210, 40, 86, 0.3);
 }
 
 /* крестик */
@@ -130,9 +134,14 @@
   transform: rotate(-45deg);
 }
 
+.main-nav--opened .main-nav__toggle:hover::before,
+.main-nav--opened .main-nav__toggle:hover::after {
+  background-color: rgb(210, 40, 86);
+}
+
 .main-nav--opened .main-nav__toggle:active::before,
 .main-nav--opened .main-nav__toggle:active::after {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(210, 40, 86, 0.3);
 }
 
 .main-nav__list {
@@ -179,7 +188,33 @@
   color: $white;
   text-transform: uppercase;
   text-decoration: none;
+  &:hover {
+    color: $pink;
+  }
+  &:active {
+    opacity: 0.3;
+  }
   @media ($desktop-widths) {
     text-transform: none;
+    &:active {
+      color: $white;
+      opacity: 0.3;
+    }
+  }
+}
+
+.main-nav__link:not([href]) {
+  @media ($desktop-widths) {
+    color: $white;
+    padding-bottom: 5px;
+    border-bottom: 2px solid $white;
+  }
+}
+
+.main-nav__link:not([href]):hover {
+  @media ($desktop-widths) {
+    color: $pink;
+    padding-bottom: 5px;
+    border-bottom: 2px solid $pink;
   }
 }

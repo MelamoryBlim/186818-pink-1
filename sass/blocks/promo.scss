@@ -56,6 +56,10 @@
     background-image: url(../img/iphone-screen-3-tablet@1x.png);
     background-position: 40px 0;
     background-repeat: no-repeat;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url(../img/iphone-screen-3-tablet@2x.png);
+      background-size: 268px auto;
+    }
   }
   @media ($desktop-widths) {
     position: relative;
@@ -67,6 +71,10 @@
     background-image: url(../img/iphone-screen-1-desktop@1x.png), url(../img/iphone-screen-2-desktop@1x.png), url(../img/iphone-screen-3-desktop@1x.png);
     background-position: 133px 80px, 457px 80px, 775px 80px;
     background-repeat: no-repeat, no-repeat, no-repeat;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url(../img/iphone-screen-1-desktop@2x.png), url(../img/iphone-screen-2-desktop@2x.png), url(../img/iphone-screen-3-desktop@2x.png);
+      background-size: 268px auto, 268px auto, 268px auto;
+    }
   }
 }
 
