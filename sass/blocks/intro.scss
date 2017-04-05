@@ -10,13 +10,11 @@
     background-image: url(../img/iphone-hand-tablet@1x.png), url(../img/bg-back-tablet@1x.jpg);
     background-position: 0 176px, -190px 0;
     background-repeat: no-repeat, no-repeat;
-    outline: 1px solid red;
   }
   @media ($desktop-widths) {
     width: 590px;
     min-height: 853px;
     margin-top: -853px;
     background-color: $gray;
-    outline: 1px solid red;
   }
 }
