@@ -82,18 +82,21 @@
   position: relative;
   left: -62px;
   cursor: pointer;
+  fill: #b5b9be;
   @media ($tablet-widths) {
     width: 22px;
     height: 22px;
     left: -13px;
     top: -26px;
-    fill: $pink;
   }
   @media ($desktop-widths) {
     width: 48px;
     height: 48px;
     left: 28px;
     top: -40px;
+  }
+  &:hover {
+    fill: #8d949b;
   }
 }
 
@@ -103,18 +106,24 @@
   top: 2px;
   left: -30px;
   cursor: pointer;
+  fill: #b5b9be;
   @media ($tablet-widths) {
     width: 26px;
     height: 24px;
     left: -13px;
     top: -46px;
-    fill: $pink;
   }
   @media ($desktop-widths) {
     width: 60px;
     height: 48px;
     left: 25px;
     top: -83px;
+  }
+  &:hover {
+    fill: #8d949b;
+  }
+  &:active {
+    fill: #d22856;
   }
 }
 
@@ -124,18 +133,24 @@
   top: 8px;
   left: 10px;
   cursor: pointer;
+  fill: #b5b9be;
   @media ($tablet-widths) {
     width: 17px;
     height: 17px;
     left: -8px;
     top: -69px;
-    fill: $pink;
   }
   @media ($desktop-widths) {
     width: 34px;
     height: 34px;
     left: 35px;
     top: -127px;
+  }
+  &:hover {
+    fill: #8d949b;
+  }
+  &:active {
+    fill: #d22856;
   }
 }
 
@@ -192,18 +207,41 @@
 }
 
 .userphoto__slider {
+    position: absolute;
+    top: 513px;
+    left: 231px;
+    width: 10px;
+    height: 10px;
+    background-color: $lightgray;
+    border: 2px solid $pink;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.userphoto__slider--common {
   position: absolute;
   top: 513px;
   left: 231px;
   width: 10px;
   height: 10px;
-  background: $lightgray;
+  background-color: $lightgray;
   border: 2px solid $pink;
   border-radius: 50%;
   cursor: pointer;
 }
 
 .userphoto__control--crop > .userphoto__slider {
+  @media ($mobile-widths-only) {
+    position: absolute;
+    top: 513px;
+    left: 231px;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(242, 242, 242);
+    border: 2px solid $pink;
+    border-radius: 50%;
+    cursor: pointer;
+  }
   @media ($tablet-widths) {
     top: 71px;
     left: 586px;
@@ -214,6 +252,18 @@
 }
 
 .userphoto__control--fill > .userphoto__slider {
+  @media ($mobile-widths-only) {
+    position: absolute;
+    top: 513px;
+    left: 231px;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(242, 242, 242);
+    border: 2px solid $pink;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: 1px solid red;
+  }
   @media ($tablet-widths) {
     top: 144px;
     left: 465px;
@@ -224,6 +274,17 @@
 }
 
 .userphoto__control--contrast > .userphoto__slider {
+  @media ($mobile-widths-only) {
+    position: absolute;
+    top: 513px;
+    left: 231px;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(242, 242, 242);
+    border: 2px solid $pink;
+    border-radius: 50%;
+    cursor: pointer;
+  }
   @media ($tablet-widths) {
     top: 214px;
     left: 536px;
@@ -289,7 +350,7 @@
 }
 
 .userphoto__btn--posting {
-  font-family: "OpenSans bold", sans-serif;
+  font-family: "OpenSans bold", Arial, sans-serif;
   color: $pink;
   text-decoration: none;
   font-size: 18px;
@@ -303,6 +364,7 @@
   padding-left: 86px;
   padding-right: 86px;
   margin-top: 38px;
+  outline: none;
   @media ($tablet-widths) {
     position: relative;
     top: -98px;
@@ -316,10 +378,17 @@
     padding-left: 40px;
     padding-right: 38px;
   }
+  &:hover {
+    background-color: $pink;
+    color: $white;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .userphoto__btn--cancel {
-  font-family: "OpenSans bold", sans-serif;
+  font-family: "OpenSans bold", Arial, sans-serif;
   color: #e3e4e4;
   text-decoration: none;
   font-size: 18px;
@@ -334,6 +403,7 @@
   padding-right: 100px;
   margin-top: 12px;
   margin-bottom: 41px;
+  outline: none;
   @media ($tablet-widths) {
     position: relative;
     top: -86px;
@@ -348,5 +418,13 @@
     margin-left: 68px;
     padding-left: 52px;
     padding-right: 50px;
+  }
+  &:hover {
+    border: solid 3px #b5b9be;
+    color: #c4c6c8;
+  }
+  &:active {
+    background-color: #b5b9be;
+    color: rgba(255, 255, 255, 0.3);
   }
 }
