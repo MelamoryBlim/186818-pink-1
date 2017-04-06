@@ -21,6 +21,7 @@
     "gulp-svgmin": "^1.2.3",
     "gulp-svgstore": "^6.1.0",
     "gulp-uglify": "^2.0.0",
+    "node-bourbon": "^4.2.8",
     "run-sequence": "^1.2.2",
     "vinyl-ftp": "^0.5.0",
     "@htmlacademy/editorconfig-cli": "0.1.x"
