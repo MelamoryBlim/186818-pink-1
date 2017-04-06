@@ -3,7 +3,6 @@
 
 var gulp = require('gulp'),
   plumber = require('gulp-plumber'),
-  gutil = require('gulp-util'),
   sass = require('gulp-sass'),
   browserSync = require('browser-sync'),
   concat = require('gulp-concat'),
@@ -42,11 +41,13 @@ gulp.task('browser-sync', function () {
   });
 });
 
-gulp.task('clean', function() {
+gulp.task('clean', function () {
+  'use strict';
   return del('build');
 });
 
-gulp.task('copy', function() {
+gulp.task('copy', function () {
+  'use strict';
   return gulp.src([
     'fonts/**/*.{woff,woff2}',
     'img/**/*',
@@ -55,7 +56,7 @@ gulp.task('copy', function() {
   ], {
     base: '.'
   })
-  .pipe(gulp.dest('build'));
+    .pipe(gulp.dest('build'));
 });
 
 
@@ -82,7 +83,8 @@ gulp.task('imagemin', function () {
     .pipe(gulp.dest('build/img'));
 });
 
-gulp.task('symbols', function() {
+gulp.task('symbols', function () {
+  'use strict';
   return gulp.src('build/img/icons /*.svg')
     .pipe(svgmin())
     .pipe(svgstore({
@@ -91,17 +93,6 @@ gulp.task('symbols', function() {
     .pipe(rename('symbols.svg'))
     .pipe(gulp.dest('build/img'));
 });
-
-//gulp.task('build', function(fn) {
-//  run(
-//    'clean',
-//    'copy',
-//    'sass',
-//    'imagemin',
-//    'symbols',
-//    fn
-//  );
-//});
 
 gulp.task('build', ['clean', 'copy', 'imagemin', 'sass', 'scripts'], function () {
   'use strict';
