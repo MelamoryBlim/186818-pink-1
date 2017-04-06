@@ -31,7 +31,7 @@ input[type=radio] {
 
 .versions__content-wrapper ul:nth-child(1) li {
   background-color: $gray;
-  font-family: "OpenSans bold", sans-serif;
+  font-family: "OpenSans bold", Arial, sans-serif;
   color: $white;
   font-size: 18px;
   font-weight: 700;
@@ -69,7 +69,7 @@ input[type=radio] {
 
 .versions__content-wrapper ul:nth-child(2) li {
   background-color: $gray;
-  font-family: 'OpenSans light', sans-serif;
+  font-family: 'OpenSans light', Arial, sans-serif;
   color: $white;
   font-size: 24px;
   font-weight: 300;
