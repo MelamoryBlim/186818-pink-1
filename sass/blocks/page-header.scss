@@ -27,10 +27,10 @@
     background-image: url(../img/iphone-hand-desktop@1x.png), url(../img/bg-back-desktop@1x.jpg);
     background-position: 143px 208px, -682px 0;
     background-repeat: no-repeat, no-repeat;
-  }
-  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background-image: url(../img/iphone-hand-desktop@2x.png), url(../img/bg-back-desktop@2x.jpg);
-    background-size: 1050px auto, 2560px auto;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url(../img/iphone-hand-desktop@2x.png), url(../img/bg-back-desktop@2x.jpg);
+      background-size: 1050px auto, 2560px auto;
+    }
   }
 }
 
@@ -63,10 +63,10 @@
     background-image: url(../img/bg-back-desktop@1x.jpg);
     background-position: -680px 0;
     background-repeat: no-repeat;
-  }
-  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background-image: url(../img/bg-back-desktop@2x.jpg);
-    background-size: 2560px auto;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url(../img/bg-back-desktop@2x.jpg);
+      background-size: 2560px auto;
+    }
   }
 }
 
@@ -99,16 +99,16 @@
     background-image: url(../img/bg-back-desktop@1x.jpg);
     background-position: -680px 0;
     background-repeat: no-repeat;
-  }
-  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background-image: url(../img/bg-back-desktop@2x.jpg);
-    background-size: 2560px auto;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url(../img/bg-back-desktop@2x.jpg);
+      background-size: 2560px auto;
+    }
   }
 }
 
 .page-header__competition-title {
   color: $white;
-  font-family: 'OpenSans light', sans-serif;
+  font-family: 'OpenSans light', Arial, sans-serif;
   font-size: 24px;
   line-height: 29px;
   font-weight: 400;

@@ -33,7 +33,7 @@
 }
 
 .download__link--app {
-  font-family: "OpenSans bold", sans-serif;
+  font-family: "OpenSans bold", Arial, sans-serif;
   color: $white;
   text-decoration: none;
   font-size: 18px;
@@ -56,6 +56,13 @@
     padding-left: 30px;
     padding-right: 28px;
     font-size: 21px;
+  }
+  &:hover {
+    background-color: $white;
+    color: $pink;
+  }
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
   }
 }
 

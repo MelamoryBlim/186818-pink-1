@@ -15,11 +15,11 @@
   var pageHeaderForm = document.querySelector('.page-header--form'),
     userFormBtn = document.getElementById('userFormBtn'),
     popupErrorOk = document.querySelector('.user-form__error-popup-btn'),
-    popupSendOk = document.querySelector('.user-form__send-popup-btn');
+    popupSendOk = document.querySelector('.user-form__send-popup-btn'),
+    popupError = document.querySelector('.user-form__error-popup'),
+    popupSend = document.querySelector('.user-form__send-popup');
   if (pageHeaderForm) {
     userFormBtn.addEventListener('click', function (event) {
-      var popupError = document.querySelector('.user-form__error-popup'),
-        popupSend = document.querySelector('.user-form__send-popup');
       event.preventDefault();
       popupError.style.display = 'block';
       popupError.style.position = 'fixed';
@@ -29,18 +29,23 @@
       popupSend.style.position = 'fixed';
       popupSend.style.top = '480px';
       popupSend.style.zIndex = '150';
+      userFormBtn.style.backgroundColor = '#e5e5e5';
+      userFormBtn.style.outline = 'none';
+      userFormBtn.style.borderColor = '#e5e5e5';
     });
 
     popupErrorOk.addEventListener('click', function (event) {
-      var popupError = document.querySelector('.user-form__error-popup');
       event.preventDefault();
       popupError.style.display = 'none';
+      userFormBtn.style.backgroundColor = '#2aab6d';
+      userFormBtn.style.borderColor = '#2aab6d';
     });
 
     popupSendOk.addEventListener('click', function (event) {
-      var popupSend = document.querySelector('.user-form__send-popup');
       event.preventDefault();
       popupSend.style.display = 'none';
+      userFormBtn.style.backgroundColor = '#2aab6d';
+      userFormBtn.style.borderColor = '#2aab6d';
     });
   }
 }());
@@ -168,6 +173,98 @@
         slide2.style.display = 'none';
         slide1.style.display = 'block';
       }
+    });
+  }
+}());
+
+// управление инструментами обработки фотографий
+(function () {
+  'use strict';
+  var pageHeaderPhoto = document.querySelector('.page-header--photo'),
+    crop = document.querySelector('.icon-editor-crop'),
+    fills = document.querySelector('.icon-editor-fill'),
+    contrast = document.querySelector('.icon-editor-contrast'),
+    slider = document.querySelector('.userphoto__slider--common'),
+    sliderCrop = document.querySelector('.userphoto__control--crop > .userphoto__slider'),
+    sliderFills = document.querySelector('.userphoto__control--fill > .userphoto__slider'),
+    sliderContrast = document.querySelector('.userphoto__control--contrast > .userphoto__slider');
+  if (pageHeaderPhoto) {
+    if (document.body.clientWidth < 700) {
+      slider.style.left = '151px';
+      crop.addEventListener('click', function (event) {
+        event.preventDefault();
+        crop.style.fill = (crop.style.fill !== 'rgb(210, 40, 86)') ? 'rgb(210, 40, 86)' : 'rgb(181, 185, 190)';
+        fills.style.fill = 'rgb(181, 185, 190)';
+        contrast.style.fill = 'rgb(181, 185, 190)';
+        slider.style.backgroundColor = (crop.style.fill === 'rgb(210, 40, 86)') ? 'rgb(210, 40, 86)' : 'rgb(242, 242, 242)';
+        slider.style.left = '80px';
+        if ((crop.style.fill !== 'rgb(210, 40, 86)') && (fills.style.fill !== 'rgb(210, 40, 86)') && (contrast.style.fill !== 'rgb(210, 40, 86)')) {
+          slider.style.left = '151px';
+        }
+      });
+      fills.addEventListener('click', function (event) {
+        event.preventDefault();
+        fills.style.fill = (fills.style.fill !== 'rgb(210, 40, 86)') ? 'rgb(210, 40, 86)' : 'rgb(181, 185, 190)';
+        crop.style.fill = 'rgb(181, 185, 190)';
+        contrast.style.fill = 'rgb(181, 185, 190)';
+        slider.style.backgroundColor = (fills.style.fill === 'rgb(210, 40, 86)') ? 'rgb(210, 40, 86)' : 'rgb(242, 242, 242)';
+        slider.style.left = '250px';
+        if ((crop.style.fill !== 'rgb(210, 40, 86)') && (fills.style.fill !== 'rgb(210, 40, 86)') && (contrast.style.fill !== 'rgb(210, 40, 86)')) {
+          slider.style.left = '151px';
+        }
+      });
+      contrast.addEventListener('click', function (event) {
+        event.preventDefault();
+        contrast.style.fill = (contrast.style.fill !== 'rgb(210, 40, 86)') ? 'rgb(210, 40, 86)' : 'rgb(181, 185, 190)';
+        crop.style.fill = 'rgb(181, 185, 190)';
+        fills.style.fill = 'rgb(181, 185, 190)';
+        slider.style.backgroundColor = (contrast.style.fill === 'rgb(210, 40, 86)') ? 'rgb(210, 40, 86)' : 'rgb(242, 242, 242)';
+        slider.style.left = '180px';
+        if ((crop.style.fill !== 'rgb(210, 40, 86)') && (fills.style.fill !== 'rgb(210, 40, 86)') && (contrast.style.fill !== 'rgb(210, 40, 86)')) {
+          slider.style.left = '152px';
+        }
+      });
+    } else if (document.body.clientWidth >= 700) {
+      crop.addEventListener('click', function (event) {
+        event.preventDefault();
+        crop.style.fill = (crop.style.fill !== 'rgb(210, 40, 86)') ? 'rgb(210, 40, 86)' : 'rgb(181, 185, 190)';
+        sliderCrop.style.backgroundColor = (sliderCrop.style.backgroundColor !== 'rgb(210, 40, 86)') ? 'rgb(210, 40, 86)' : 'rgb(242, 242, 242)';
+      });
+      fills.addEventListener('click', function (event) {
+        event.preventDefault();
+        fills.style.fill = (fills.style.fill !== 'rgb(210, 40, 86)') ? 'rgb(210, 40, 86)' : 'rgb(181, 185, 190)';
+        sliderFills.style.backgroundColor = (sliderFills.style.backgroundColor !== 'rgb(210, 40, 86)') ? 'rgb(210, 40, 86)' : 'rgb(242, 242, 242)';
+      });
+      contrast.addEventListener('click', function (event) {
+        event.preventDefault();
+        contrast.style.fill = (contrast.style.fill !== 'rgb(210, 40, 86)') ? 'rgb(210, 40, 86)' : 'rgb(181, 185, 190)';
+        sliderContrast.style.backgroundColor = (sliderContrast.style.backgroundColor !== 'rgb(210, 40, 86)') ? 'rgb(210, 40, 86)' : 'rgb(242, 242, 242)';
+      });
+    }
+    crop.addEventListener('mouseover', function (event) {
+      event.preventDefault();
+      crop.style.fill = (crop.style.fill !== 'rgb(210, 40, 86)') ? 'rgb(141, 148, 155)' : 'rgb(210, 40, 86)';
+    });
+    crop.addEventListener('mouseout', function (event) {
+      event.preventDefault();
+      crop.style.fill = (crop.style.fill !== 'rgb(210, 40, 86)') ? 'rgb(181, 185, 190)' : 'rgb(210, 40, 86)';
+    });
+    fills.addEventListener('mouseover', function (event) {
+      event.preventDefault();
+      fills.style.fill = (fills.style.fill !== 'rgb(210, 40, 86)') ? 'rgb(141, 148, 155)' : 'rgb(210, 40, 86)';
+    });
+    fills.addEventListener('mouseout', function (event) {
+      event.preventDefault();
+      fills.style.fill = (fills.style.fill !== 'rgb(210, 40, 86)') ? 'rgb(181, 185, 190)' : 'rgb(210, 40, 86)';
+    });
+
+    contrast.addEventListener('mouseover', function (event) {
+      event.preventDefault();
+      contrast.style.fill = (contrast.style.fill !== 'rgb(210, 40, 86)') ? 'rgb(141, 148, 155)' : 'rgb(210, 40, 86)';
+    });
+    contrast.addEventListener('mouseout', function (event) {
+      event.preventDefault();
+      contrast.style.fill = (contrast.style.fill !== 'rgb(210, 40, 86)') ? 'rgb(181, 185, 190)' : 'rgb(210, 40, 86)';
     });
   }
 }());
